@@ -49,14 +49,14 @@ let num2 = 7;
 num1 = 4;
 num2 = 6;
 let theSum = num1 + num2;
-console.log(theSum);
+
 // Exercise 8. Now we will try some multiplication.
 // Make a new variable called 'theProduct', multiply num1 and num2 and assign
 // the resulting value to 'theProduct'.
 
 let theProduct = num1 * num2;
 theProduct;
-console.log(theProduct)
+
 // Exercise 9.
 // Make a new variable called 'statement' and using 'myName' and
 // 'dreamDestination' and the concatenation method of your choice, make the
@@ -64,7 +64,6 @@ console.log(theProduct)
 // "Hi, my name is <your name>, and I can't wait to visit <your destination>!"
 
 let statement = `Hi, my name is ${myName}, and I can wait to visit ${dreamDestination}`
-console.log(statement)
 
 // *NOTE* For the following exercises, put your answers in the line below
 // the description of each exercise. For example, below a prompt, you may see:
