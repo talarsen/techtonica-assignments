@@ -20,12 +20,12 @@ let myName;
 // Exercise 3. Assign your name as the value for 'myName'
 
 myName = "Tara Larsen";
-console.log(myName)
+
 // Exercise 4. Declare a variable called dreamDestination and give it the value
 // of what your dream vacation destination is.
 
 let dreamDestination = "Whistler, BC";
-console.log(dreamDestination)
+
 // Exercise 5. Make the following variables and assignments
 // - a variable called num1 with a value greater than 1 and less than 10
 // - a variable called num2 with a value of greater than or equal to 1 and less
@@ -76,7 +76,7 @@ console.log(statement)
 // place your answer in the quotes below:
 
 const myAnswerForExercise10 = "string";
-console.log(myAnswerForExercise10)
+
 // Exercise 11. What is the data type of the value stored in 'product',
 // place your answer in the quotes below:
 
@@ -95,47 +95,47 @@ const D = "D";
 
 // What is the value of B + C
 const myAnswerForExercise13 = "5";
-console.log(myAnswerForExercise13);
+
 
 // Exercise 14 What is the value of
 // A + "n" + D
 const myAnswerForExercise14 =  "RnD";
-console.log(myAnswerForExercise14);
+
 
 // Exercise 15 What is the value of
 // A + B * 2 + D + C / 2:
 const myAnswerForExercise15 = "R2D2";
-console.log(myAnswerForExercise15);
+
 
 
 // Exercise 16 What is the value of A * B
 const myAnswerForExercise16 = "NaN";
-console.log(myAnswerForExercise16);
+
 
 
 // Exercise 17 What is the value of true || false
 const myAnswerForExercise17 = "true";
-console.log(myAnswerForExercise17);
+
 
 // Exercise 18 What is the value of 1 === "1"
 const myAnswerForExercise18 = "false";
-console.log(myAnswerForExercise18)
+
 // Exercise 19 What is the value of 1 == "1"
 
 const myAnswerForExercise19 = "true";
-console.log(myAnswerForExercise19)
+
 
 // Exercise 20 What is the value of 1 < 1
 const myAnswerForExercise20 = "false";
-console.log(myAnswerForExercise20)
+
 
 // Exercise 21 What is the value of 1 < 2 < 3
 const myAnswerForExercise21 = "true";
-console.log(myAnswerForExercise21)
+
 
 // Exercise 22 What is the value of 2 < 1 < 3
 const myAnswerForExercise22 = "true";
-console.log(myAnswerForExercise22);
+
 
 // Congrats, you made it to the end!
 // Did you find this easy or hard? If you used references, which ones helped you?
