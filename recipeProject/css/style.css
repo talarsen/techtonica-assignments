@@ -1,0 +1,82 @@
+body {
+  margin: auto;
+}
+ .left {
+  background-color: #f4E4E0;
+  height: 100vh;
+  width: 50%;
+  display: inline-block;
+  
+}
+
+.right {
+  position: absolute;
+  display: inline;
+  height: 100vh;
+  background-color: #a4dddb;
+  width: 50%;
+}
+
+img { 
+  display: block;
+  width: 100%;
+}
+
+.topPinkDiv {
+  height: 337px;
+  padding-top: 64px;
+  width: 100%;
+  background-color: #f4E4E0;
+ 
+}
+
+.recipeTitle {
+  color: #45334e;
+  font-size: 4em;
+  font-family: 'Open Sans', sans-serif;;
+  font-weight: bold;
+  text-align: center;
+}
+
+.ingredientsHeader {
+  color: #45334e;
+  font-size: 2em;
+  font-family: 'Montserrat', sans-serif;
+  margin-left: 150px;
+  
+}
+
+.ingredientsList {
+  color: #45334e;
+  font-size: 1em;
+  font-family: 'Montserrat', sans-serif;
+  margin-left: 130px;
+}
+
+.recipeTime  {
+  color: #45334e;
+  font-family: 'Montserrat', sans-serif;
+  margin-left: 150px;
+}
+
+.externalLinks {
+  color: #45334e;
+  font-family: 'Montserrat', sans-serif;
+  margin-left: 150px;
+}
+
+.recipeDirections {
+  color: #45334e;
+  font-size: 1em;
+  font-family: 'Montserrat', sans-serif;
+  display: inline-block;
+  margin-left: 80px;
+}
+
+.directionsHeader {
+  color: #45334e;
+  font-size: 2em;
+  font-family: 'Montserrat', sans-serif;
+  display: inline-block;
+  margin-left: 100px;
+}
