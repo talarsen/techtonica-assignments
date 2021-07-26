@@ -1,5 +1,14 @@
 body {
   background-color: white;
+
+}
+
+.subHeading {
+  font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+.obtains {
+  text-decoration: line-through;
 }
 
 /***********Nav Bar ******************/
@@ -24,9 +33,22 @@ body {
 
 
 /************** Heading and Recipe Author ******************/
-.recipeInformation {
-  margin-left: 150px
+.headerInformation {
+  display: block;
+  background-color: lightblue
 }
+
+.display-1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 5em;
+  
+}
+
+p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
 .rounded-circle {
   border-radius: 50%!important;
 }
@@ -40,12 +62,7 @@ img, svg {
   display: inline-block;
 }
 
-/****************Heading *************************/
-.display-1 {
-  font-family: 'Playfair Display', serif;
-  font-size: 5em;
-  
-}
+
 
 /****************Image *************************/
  .img-fluid {
@@ -55,21 +72,56 @@ img, svg {
   
 
  }
-
  .recipeInformation {
-   margin-left: 100px;
-   display: block;
-   background-color: lightblue
+   background-color: lightgreen;
+   margin-left: 10px;
  }
-
-/****************DIV Left *************************/
+  
+/****************Left and Right Section *************************/
+.ingredientDirectionContainer {
+  background-color: lightcyan;
+  margin-left: 10px;
+}
+/****************Left DIV *************************/
 
 .left {
   background-color: yellow;
   display: inline-block;
-  margin-left: 50px;
+  
 }
 
-.recipeInformation {
-  margin-left: 150px
+/****************RIGHT DIV *************************/
+.right {
+  background-color: pink;
+  display: inline-block;
+  width: auto;
+  margin-bottom: 10px;
 }
+
+
+/****************END Left and Right Section *************************/
+
+.recipeLinkImage{
+  
+    float: left;
+    width:  400px;
+    height: 400px;
+    object-fit: cover;
+    border: 2px solid orange;
+    width: 32%;
+    margin: 5px;
+    
+}
+
+@media (max-width: 1080px){
+  .recipeLinkImage {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1081px){
+  .recipeLinkImage {
+    border-color: blue
+  }
+}
+
