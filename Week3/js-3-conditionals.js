@@ -1,11 +1,16 @@
-// Priya will attend only if Ming goes.
+// Priya will attend only if Ming goes. 
 // David loves popcorn and will go to the movies under any circumstance
 // Alex will automatically go to the movies if David goes, and will automatically not go to the movies if David does not go
 // Ming will not attend if David has already said he is attending and Ming will say yes if Priya says yes.
 // Breanna loves to be around people and will only go if there are at least 2 others going
 
-
-
+//if Ming is not going then take Priya out of array
+//if David is not in the array then add David
+//if David is in the array then add Alex 
+//if David is not in array then remove Alex(consolidate line 9 and 10)
+//if David is in array then remove Ming 
+//if Priya is in array add Ming
+// if 2 of the above names are in the array add Breanna
 
 // Write a function called movieNight that takes in an array. The array must contain 3 strings, and each string must be one of the names shown above who are interested in going to the movies. And the array should include all the combinaton of three names out of five(total 10 possible array input). Write a body for the movieNight function, based on the "rules" associated with each of the names above, that returns an array of the people who will attend the movie. Your function should account for the logic necessary for all 5 people, so that no matter which names are given, the result will always be correct. (ie: Don't just code the logic for 3 of the names and pass those names in all the time.) In case there are multiple answer for a single triplet or input string display all the possible correct answer for that triplet.
 
@@ -37,12 +42,14 @@ let movieNight = (array) => {
     movieNightAttendees.push(`Expect PMB`, "P", "M", "B")
     console.log(movieNightAttendees)
   }
-cd .
+
   //returns an array of the people who will attend the movie
   return movieNightAttendees;
 }
 
 movieNight(["P", "B", "A"]);
+
+
 
 // ['P', 'D', 'A'] = ['D', 'A', 'B']
 // ['P', 'D', 'M'] = ['D', 'A', 'B']
