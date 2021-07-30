@@ -1,0 +1,67 @@
+
+body {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+/* ==== NAV BAR ==== */
+.navbar-light .navbar-brand {
+  font-family: 'Lato', sans-serif;
+  color: #1a237e;
+}
+
+.navbar-light .navbar-toggler {
+  color: #3f51b5;
+  border-color: #3f51b5;
+}
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
+  color: #1a237e;
+}
+.navbar-light .navbar-nav .nav-link {
+  color: #1a237e;
+}
+/* ==== TARA'S IMAGE ==== */
+.circular-portrait {
+  position: relative;
+  margin-top: 10px;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border: 1px solid blue;
+  border-radius: 50%;
+}
+
+.circular-portrait img {
+  width: 100%;
+  height: auto;
+}
+h3, h6, h2 {
+  font-family: 'Merriweather Sans', sans-serif;
+  color: white;
+}
+p {
+  font-family: 'Merriweather Sans', sans-serif;
+  color: white;
+  font-size: 1rem;
+}
+
+
+/*****FOOTER*******/
+.mx-auto {
+  margin-top: 25px;
+}
+
+
