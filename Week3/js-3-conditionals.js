@@ -1,3 +1,31 @@
+// Mention different operators that can be used in JavaScript.
+//comparison operators <, <= >= 
+//boolean values true/false
+//conditional if/else 
+//logical && || !
+
+// Write down the syntax of else if statement.
+
+// if(condition) {
+//   excute this if statement is true;
+// } else if(condition) {
+//   execute this
+// }
+  
+// In JavaScript which operator has the highest precedence?
+//logical ! has the highest precedence followed by <, <=, >= or >
+//assignment operators right to left
+
+// What is the difference between = and == operator?
+//= is an assignment whereas == is a comparison
+
+// How do you declare a Boolean in JavaScript?
+//true or false no quotes
+
+
+
+
+
 // Priya will attend only if Ming goes. 
 // David loves popcorn and will go to the movies under any circumstance
 // Alex will automatically go to the movies if David goes, and will automatically not go to the movies if David does not go
