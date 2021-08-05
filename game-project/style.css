@@ -1,0 +1,13 @@
+#backgroundContainer {
+  background-image: url(questionMark.svg);
+  border: 2px solid black;
+  background-size: 50px;
+  background-repeat: repeat;
+  height: 50px;
+}
+
+#resultsContainer {
+  background-color: pink;
+  width: 100%;
+  height: auto;
+}
