@@ -44,20 +44,20 @@ let revealGuess = (userGuess) => {
     if (isNaN(userGuess)){
       console.log(`Please enter a number, your guess was not a number`)
       userResultText.textContent = "Please re-enter a number, your guess was not a number "
-      resultsDiv.appendChild(userResultText)
+      return resultsDiv.appendChild(userResultText)
       return 
   } else if(secretNumber === userGuess){
       console.log(secretNumber)
       userResultText.textContent = "Congratulations! You're guessed the secret number. You should buy a lottery ticket! "
-      resultsDiv.appendChild(userResultText)
+      return resultsDiv.appendChild(userResultText)
   } else if(secretNumber < userGuess){
       console.log(secretNumber)
       userResultText.textContent = "Your guess was too high."
-      resultsDiv.appendChild(userResultText)
+      return resultsDiv.appendChild(userResultText)
   } else if(secretNumber > userGuess) {
       console.log(secretNumber)
       userResultText.textContent = "Your guess was too low."
-      resultsDiv.appendChild(userResultText)
+      return resultsDiv.appendChild(userResultText)
   } 
     // secretNumberText.textContent =`The secret number was ${secretNumber}`
     // revealSecretNumberDiv.appendChild(secretNumberText)
@@ -113,7 +113,7 @@ let userGuessTracker = () => {
       numOfKeypresses++
       console.log(`A key was pressed and ${numOfKeypresses}`);
       if(numOfKeypresses === 5){
-      secretNumberText.textContent =`The secret number was ${secretNumber}`
+      secretNumberText.textContent =`The secret number was ${secretNumber} Thank you for playing.`
       revealSecretNumberDiv.appendChild(secretNumberText)
       console.log(`The secret number was ${secretNumber}`)
     }
