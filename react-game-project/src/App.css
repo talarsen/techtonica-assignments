@@ -1,0 +1,27 @@
+.App {
+  text-align: center;
+}
+
+.headerText {
+  color: black
+}
+
+.guessButton {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border: 1px solid black;
+  margin-left: 5px;
+  background-color:black;
+  color: white;
+}
+
+.guessButton:hover {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border: 1px solid black;
+  margin-left: 5px;
+  background-color: red;
+  color: black;
+}
+
+.guessesLeft {
+  color: red
+}
