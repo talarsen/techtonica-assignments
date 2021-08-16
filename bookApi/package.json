@@ -1,0 +1,14 @@
+{
+  "name": "bookapi",
+  "version": "1.0.0",
+  "description": "This is an api that will store information about my books.  We will store information about ISBN of the book, title, author, published date, publisher and number of pages.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tara Larsen",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
