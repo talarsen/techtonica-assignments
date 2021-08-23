@@ -45,7 +45,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 app.post('/book', (req, res) => {
-    const book = req.body;
+    const book = req.body;//request in the object that the browser is requesting
 
     // output the book to the console for debugging
     console.log(book);
