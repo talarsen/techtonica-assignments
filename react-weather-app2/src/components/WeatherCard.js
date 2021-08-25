@@ -1,12 +1,12 @@
 import React from 'react';
 import {Card} from 'react-bootstrap';
 
-const WeatherCard = ({dt, temp, temp_min, temp_max, main, icon, weatherDescription}) => {
+const WeatherCard = ({dt, currentTemp, temp_min, temp_max, main, icon, weatherDescription}) => {
   // create a date object with Date class constructor
   //dt is the date timestamp 
   const date = new Date(dt);
   return (
-    <Card style={{width: '18rem'}}>
+    <Card >
       <Card.Img
         variant="top"
         // get the src from example url and pass the icon prop for icon code
@@ -19,7 +19,7 @@ const WeatherCard = ({dt, temp, temp_min, temp_max, main, icon, weatherDescripti
           {date.toLocaleDateString()} - {date.toLocaleTimeString()}
         </p>
         {/* current temperature */}
-        <p>Current Temperature: {temp}</p>
+        <p>Current Temperature: {currentTemp}</p>
         {/* minimum temperature */}
         <p>Low: {temp_min}</p>
         {/* maximum temperature */}
