@@ -25,7 +25,18 @@ function App() {
     <Container className="App">
         <CitySelector onSearch={(city) => setUrl(`${API_BASE_URL}/data/2.5/forecast?q=${city}&units=imperial&appid=${API_KEY}`)} />
         {/* conditionally render  */}
-     {data && <WeatherList weathers={data.list} />}
+     {data && <WeatherList weathers={data.list.filter(({dt}) => {
+          const date = new Date(dt * 1000);
+          if(date.getHours() === 8){
+            //date.getHours() at the current hour
+            //get
+            return true;
+          } 
+          console.log(date.getHours()) 
+          // return true;  
+     })
+     
+     } />}
      
     </Container>
     
