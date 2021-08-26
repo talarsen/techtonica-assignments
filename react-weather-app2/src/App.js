@@ -2,7 +2,6 @@ import React from "react";
 import './App.css';
 import {Container} from 'react-bootstrap';
 //components
-
 import CitySelector from './components/CitySelector';
 import UseFetch from "./hooks/UseFetch";
 import WeatherList from './components/WeatherList';
@@ -28,8 +27,6 @@ function App() {
      {data && <WeatherList weathers={data.list.filter(({dt}) => {
           const date = new Date(dt * 1000);
           if(date.getHours() === 8){
-            //date.getHours() at the current hour
-            //get
             return true;
           } 
           console.log(date.getHours()) 
