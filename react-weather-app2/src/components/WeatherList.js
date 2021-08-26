@@ -8,9 +8,9 @@ const WeatherList = ({weathers}) => {
            {weathers.map(({dt, main, weather, currentTemp}) => (
                 <Col key={dt}>
                     <WeatherCard 
-                    currentTemp = {temperature.value}
-                    temp_max = {temperature.max} 
-                    temp_min = {temperature.min} 
+                    currentTemp = {main.temp}
+                    temp_max = {main.temp_max} 
+                    temp_min = {main.temp_min} 
                     dt= {dt * 1000} 
                     main= {weather[0].main} 
                     icon= {weather[0].icon} 

@@ -1,7 +1,7 @@
 import React from 'react';
 import {Card} from 'react-bootstrap';
 
-const WeatherCard = ({dt, currentTemp, temp_min, temp_max, main, icon, weatherDescription}) => {
+const WeatherCard = ({dt, currentTemp, temp_min, temp_max, main, icon}) => {
   // create a date object with Date class constructor
   //dt is the date timestamp 
   const date = new Date(dt);
