@@ -7,7 +7,7 @@ function Footer() {
   return(
     
       <footer>
-        <p>Coppyright ⓒ  {showCurrentYear()} Made by Tara Larsen</p>
+        <p>Copyright ⓒ  {showCurrentYear()} Made by Tara Larsen</p>
       </footer>
     
   )

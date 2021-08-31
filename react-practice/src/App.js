@@ -6,13 +6,15 @@ import CreateNoteArea from "./components/CreateNoteArea.js"
 function App() {
 
   const [notes, setNotes]= useState([]);
-
+  
+//this is a callback function in the parent App.js and called in CreateNote
   function addNote(newNote) {
     setNotes(previousNotes => {
       return [...previousNotes, newNote]
     })
   }
 
+  //this is a callback function in the parent and called in Note
   function deleteNote(id) {
     setNotes(previousNotes => {
       return previousNotes.filter((noteItem, index) => {
