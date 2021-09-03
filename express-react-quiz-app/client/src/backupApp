@@ -1,0 +1,51 @@
+const [index, setCurrentQuestion] = useState(0)
+
+//make an HTTP request using useEffect.
+  useEffect(() => {
+  //make a simple GET request using the Fetch API to our backend and then have our data returned as JSON.
+    fetch("/totalquestions")
+      .then((res) => res.json())
+    //Once we have the data returned to us, we will get the message property (to grab our greeting that we sent from the server) and then put it in a state variable called data.
+      .then((json) => setQuestions(json)); 
+      //tell useEffect when it has to call the function again
+      //[] is a second parameter
+    }, []) ;
+
+ const renderQuestions = () => {
+   
+ }
+ renderQuestions()
+
+
+ const SingleQuestion = ({question}) => {
+    return(
+    <div className='question-section'>
+      <div className='question-count'>
+        <span>Question: {index +1 }</span>/{questions.length}
+      </div>
+      
+      <div className='question-text'>{question.title}</div>
+    </div>
+  )
+}
+
+
+
+
+//using a conditional in our JSX to say that if our data is not there yet, show the text "Loading...".
+  return (
+    <div className="App">
+    {(questions[index]) &&
+      <SingleQuestion question={questions[index]} />
+    }
+
+        {<p>{!questions ? "Loading..." : null}</p>}
+
+    <div className='answer-section'>
+      {questions[index].answerOptions.map((answerOption, index) => (
+        <button>{answerOption.answerText}</button>
+      ))}
+    </div>
+    
+    </div>
+  );

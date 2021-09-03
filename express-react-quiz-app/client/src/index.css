@@ -73,17 +73,19 @@ body {
   justify-content: space-between;
 }
 
+
+
 button {
-  width: 100%;
+  width: 50%;
   font-size: 16px;
-  color: #ffffff;
-  background-color: #252d4a;
+  color: #020045;
+  background-color: #fdfdfd;
   border-radius: 15px;
   display: flex;
   padding: 5px;
   justify-content: flex-start;
   align-items: center;
-  border: 5px solid #234668;
+  border: 2px solid #1969b9;
   cursor: pointer;
 }
 
@@ -96,7 +98,8 @@ button {
 }
 
 button:hover {
-  background-color: #555e7d;
+  background-color: #020045;
+  color: white
 }
 
 button:focus {
@@ -105,4 +108,28 @@ button:focus {
 
 button svg {
   margin-right: 5px;
+}
+
+.next  {
+  width: 20%;
+  font-size: 16px;
+  color: #020045;
+  background-color: #fdfdfd;
+  border-radius: 15px;
+  display: inline-block;
+  padding: 5px;
+  border: 2px solid #1969b9;
+  cursor: pointer;
+}
+
+.previous {
+  width: 20%;
+  font-size: 16px;
+  color: #020045;
+  background-color: #fdfdfd;
+  border-radius: 15px;
+  display: inline-block;
+  padding: 5px;
+  border: 2px solid #1969b9;
+  cursor: pointer;
 }
