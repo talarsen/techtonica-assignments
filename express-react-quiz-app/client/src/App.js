@@ -2,7 +2,7 @@ import React, {useState, useEffect} from "react";
 import './App.css';
 //cleaner code to define all components outside of the App function. Just remember to pass in the props from App
 
-const SingleQuestion = ({question, questions, index, setUserChoice}) => {
+const SingleQuestion = ({ question, questions, index, setUserChoice}) => {
 
   //set new variable called choices to undefined OR an empty array
   //question={question[index]is the same as question.choices, questions is the old the total Questions, index is the current item. The choices array will be inserted into the empty array
@@ -26,14 +26,15 @@ const SingleQuestion = ({question, questions, index, setUserChoice}) => {
         <div className='answer-section'>
             {choices.map((choice) =>  {
               return (
-                <button onClick={()=> {setUserChoice(choice)} }> {choice} </button>
+                <button onClick={()=> {setUserChoice(choice)} }> {choice}  </button>
               )
             }
 					)}
 				</div>
 
-        {/* handleGuess( “dog”, “cat”)
-        handleGuess(userGuess, question.correct) */}
+        
+
+       
         
     </>
   )
@@ -62,9 +63,12 @@ const [userChoice, setUserChoice]= useState("");
     // if userGuess is  equal to correct then update setScore
     if(userChoice === correct){
     setScore(score + 1)
-    console.log("this is reaching handleScore")
+    console.log(`Correct! Your score is ${score + 1}`)
+    } else if(userChoice !== correct){
+    console.log("This is not the correct answer try again")
     }
-  }
+    }
+  
   //make an HTTP request using useEffect.Use effect should be the last thing you see before the return
     useEffect(() => {
     //make a simple GET request using the Fetch API to our backend and then have our data returned as JSON.
@@ -77,7 +81,7 @@ const [userChoice, setUserChoice]= useState("");
         //empty array is a unique case, when "these things change" the empty comes into play
       }, []) ;
   //every time state changes it rerenders the component
-      console.log(userChoice, score)
+      //console.log(userChoice, "Your score is", score)
     return (
       <div className="App">
         {/* {questions.map((item, ind) => {
@@ -87,14 +91,15 @@ const [userChoice, setUserChoice]= useState("");
         return <SingleQuestion questions={questions} question={item} index={ind} />;
       })} */}
           
-       
-          <SingleQuestion question={questions[index]} questions={questions} index={index}  setUserChoice={setUserChoice} />
+        <h1>How Well Do You Know Your US History?</h1>
+          <SingleQuestion key={questions.id} question={questions[index]} questions={questions} index={index}  setUserChoice={setUserChoice} />
          
 
-          <button className="previous"disabled={index === index } onClick={()=>{setCurrentQuestion(index -1)} } > Previous </button>
+          <button className="previous"disabled={index === 0 } onClick={()=>{setCurrentQuestion(index -1)} } > Previous </button>
 
           <button className="next"disabled={index === 9} onClick={()=>{  handleScore(); setCurrentQuestion(index +1)} } > Next </button>
           
+          <p>Your score is: {score}</p>
           
           {/* using a conditional..if questions are not loading display "Loading" message to user otherwise null it doesn't apply */}
         {<p>{!questions ? "Loading..." : null}</p>}
