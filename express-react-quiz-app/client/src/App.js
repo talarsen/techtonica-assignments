@@ -4,12 +4,6 @@ import './App.css';
 
 const SingleQuestion = ({question, questions, index, setUserChoice}) => {
 
-
-
-
-
-
-
   //set new variable called choices to undefined OR an empty array
   //question={question[index]is the same as question.choices, questions is the old the total Questions, index is the current item. The choices array will be inserted into the empty array
 
@@ -44,9 +38,6 @@ const SingleQuestion = ({question, questions, index, setUserChoice}) => {
     </>
   )
 }
-
-
-
 
 
 //take first question and render it on the screen
