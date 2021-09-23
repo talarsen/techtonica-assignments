@@ -53,7 +53,7 @@ const loadBooks = () => {
                       <div>Publisher: ${book.publisher}</div>
                       <div>Number Of Pages: ${book.numOfPages}</div>
                       <hr>
-                      <button type="button" class="btn btn-danger">Delete</button>
+                      <button type="button" class="btn btn-danger" onClick="deleteBook(${book.isbn})">Delete</button>
                       <button types="button" class="btn btn-primary" data-toggle="modal" 
                           data-target="#editBookModal" onClick="setEditModal(${book.isbn})">
                           Edit
